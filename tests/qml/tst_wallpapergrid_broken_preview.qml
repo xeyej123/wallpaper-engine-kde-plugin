@@ -47,7 +47,8 @@ TestCase {
         cfg = comp.createObject(host, {});
         verify(cfg);
         cfg.libcheck = { wallpaper: true, qtwebchannel: true };
-        if (cfg.plugin_info) cfg.plugin_info.cache_path = "file:///tmp/cache";
+        // v1.5's PluginInfo.cache_path is read-only; the preview guard does
+        // not depend on the shader cache location, so leave it at its default.
 
         page = _findFirstByPredicate(cfg, n =>
             n && n.toString && n.toString().indexOf("WallpaperPage_QMLTYPE") === 0);
