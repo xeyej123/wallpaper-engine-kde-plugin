@@ -1,5 +1,7 @@
 # Wallpaper Engine KDE — v1.5 backport for Plasma 6 / Qt 6.12
 
+> Русская версия: [README.ru.md](README.ru.md)
+
 This branch is a **community backport of the upstream crash fixes onto tag
 `v1.5`**, for users who are still running the 1.5 package.
 
